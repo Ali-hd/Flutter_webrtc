@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "755201058592",
+    "firebase_url": "https://flutters-webrtc.firebaseio.com",
+    "project_id": "flutters-webrtc",
+    "storage_bucket": "flutters-webrtc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:755201058592:android:a95059f4e5ee713d69d945",
+        "android_client_info": {
+          "package_name": "com.alihd.webrtc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "755201058592-dach3j9qbprpeoc09al4gngbusp36i2n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDImVjDDv2Gl7Mok5MGPqHnovMtVr5UfuM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "755201058592-dach3j9qbprpeoc09al4gngbusp36i2n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
