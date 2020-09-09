@@ -104,16 +104,26 @@ class DatabaseService {
     });
   }
 
-  Future updateCallData(String calleeAnswer, String calleeIce) async {
+  Future updateCallAnswer(String calleeAnswer) async {
     return await callsCollection.doc(callId).update({
-      'calleeAnswer': calleeAnswer,
-      'calleeIce' : calleeIce,
+      'calleeAnswer' : calleeAnswer,
       'accepted' : true
     });
   }
 
+  Future updateCalleeCandidate(String calleeIce) async {
+    return await callsCollection.doc(callId).update({
+      'calleeIce' : calleeIce,
+    });
+  }
+
+  Future updateCallerCandidate(String callerIce) async {
+    return await callsCollection.doc(callId).update({
+      'callerIce' : callerIce,
+    });
+  }
+
   Future<String> createCall(String callerId, String callerOffer, String friendId) async {
-    
     DocumentReference docRef = await callsCollection.add({
       'callerId': callerId,
       'callerOffer': callerOffer,
@@ -129,7 +139,6 @@ class DatabaseService {
     print(docRef.id);
 
     return docRef.id;
-
   }
 
 
